@@ -4,29 +4,32 @@ import { Link } from "react-router-dom";
 const Home = () => {
   return (
     <>
-      <div class="container">
-        <div class="row mb-2">
-          <div class="col-md-6">
-            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-              <div class="col p-4 d-flex flex-column position-static">
-                <h4 class="d-inline-block mb-2 text-primary-emphasis">
+      <div className="container">
+        <div className="row mb-2 d-flex align-items-center justify-content-center">
+          <div className="col-md-6  ">
+            <div
+              className="row bg-white g-0 rounded-5 overflow-hidden flex-md-row mb-4 shadow-lg h-md-250 position-relative"
+              style={{ border: "2px solid black" }}
+            >
+              <div className="col p-4 d-flex flex-column position-static">
+                <h4 className="d-inline-block mb-2 text-primary-emphasis">
                   Color Thief
                 </h4>
-                <div class="mb-1 text-body-secondary">Apr 23</div>
-                <p class="card-text mb-auto">
+                <small className="mb-1 text-body-secondary">Apr 23</small>
+                <small className="card-text mb-auto">
                   Upload an image and get all possbile color
-                </p>
+                </small>
                 <Link
                   to="/color-thief"
-                  class="icon-link gap-1 icon-link-hover stretched-link"
+                  className="icon-link gap-1 icon-link-hover stretched-link badge text-primary"
                 >
                   Use it
                 </Link>
               </div>
-              <div class="col-auto d-none d-lg-block">
+              <div className="col-auto d-none d-lg-block">
                 <Link to="/color-thief">
                   <img
-                    class="img-fluid rounded mb-3 mb-md-0"
+                    className="img-fluid rounded mb-3 mb-md-0"
                     src="https://source.unsplash.com/random/356X250/?color"
                     alt=""
                     style={{ maxHeight: "185px" }}
@@ -35,27 +38,28 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div class="col-md-6">
-            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-              <div class="col p-4 d-flex flex-column position-static">
-                <h4 class="d-inline-block mb-2 text-primary-emphasis">
+          <div className="col-md-6">
+            <div
+              className="row bg-white g-0 rounded-5 overflow-hidden flex-md-row mb-4 shadow-lg h-md-250 position-relative"
+              style={{ border: "2px solid black" }}
+            >
+              <div className="col p-4 d-flex flex-column position-static">
+                <h4 className="d-inline-block mb-2 text-primary-emphasis">
                   My Sign
                 </h4>
-                <div class="mb-1 text-body-secondary">Apr 24</div>
-                <p class="card-text mb-auto">
-                  Sign here and download it!
-                </p>
+                <small className="mb-1 text-body-secondary">Apr 24</small>
+                <small className="card-text mb-auto">Sign here and download it!</small>
                 <Link
                   to="/my-sign"
-                  class="icon-link gap-1 icon-link-hover stretched-link"
+                  className="icon-link gap-1 icon-link-hover stretched-link badge text-primary"
                 >
                   Use it
                 </Link>
               </div>
-              <div class="col-auto d-none d-lg-block">
+              <div className="col-auto d-none d-lg-block">
                 <Link to="/color-thief">
                   <img
-                    class="img-fluid rounded mb-3 mb-md-0"
+                    className="img-fluid rounded mb-3 mb-md-0"
                     src="https://source.unsplash.com/random/356X250/?signature"
                     alt=""
                     style={{ maxHeight: "185px" }}
@@ -64,27 +68,28 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div class="col-md-6">
-            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-              <div class="col p-4 d-flex flex-column position-static">
-                <h4 class="d-inline-block mb-2 text-primary-emphasis">
+          <div className="col-md-6">
+            <div
+              className="row bg-white g-0 rounded-5 overflow-hidden flex-md-row mb-4 shadow-lg h-md-250 position-relative"
+              style={{ border: "2px solid black" }}
+            >
+              <div className="col p-4 d-flex flex-column position-static">
+                <h4 className="d-inline-block mb-2 text-primary-emphasis">
                   Base64 Encrypt Decrypt
                 </h4>
-                <div class="mb-1 text-body-secondary">Apr 24</div>
-                <p class="card-text mb-auto">
-                  Encrypt/ Decrypt the text
-                </p>
+                <small className="mb-1 text-body-secondary">Apr 24</small>
+                <small className="card-text mb-auto">Encrypt/ Decrypt the text</small>
                 <Link
                   to="/base64"
-                  class="icon-link gap-1 icon-link-hover stretched-link"
+                  className="icon-link gap-1 icon-link-hover stretched-link badge text-primary"
                 >
                   Use it
                 </Link>
               </div>
-              <div class="col-auto d-none d-lg-block">
+              <div className="col-auto d-none d-lg-block">
                 <Link to="/color-thief">
                   <img
-                    class="img-fluid rounded mb-3 mb-md-0"
+                    className="img-fluid rounded mb-3 mb-md-0"
                     src="https://source.unsplash.com/random/356X250/?encrypt"
                     alt=""
                     style={{ maxHeight: "185px" }}

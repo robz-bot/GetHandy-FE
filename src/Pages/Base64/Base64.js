@@ -118,6 +118,7 @@ const Base641 = () => {
                 />
                 <span
                   className="input-group-text"
+                  title="Click here to copy"
                   style={{ cursor: "pointer" }}
                   id="inputGroup-sizing-lg"
                   onClick={() => {
@@ -142,6 +143,7 @@ const Base641 = () => {
                 <span
                   className="input-group-text"
                   style={{ cursor: "pointer" }}
+                  title="Click here to copy"
                   id="inputGroup-sizing-lg"
                   onClick={() => {
                     copyColorCodeDec({ decryptedText });

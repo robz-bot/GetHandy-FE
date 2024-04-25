@@ -7,8 +7,8 @@ const Header = () => {
       <div className="row">
         <div className="col-9">
           <h4>
-            Utilize all the resources at your disposal and make use of it
-            <i class="text-warning bi bi-emoji-smile-fill mx-2"></i>
+            Utilize all the resources at your disposal
+            <i class="text-dark bi bi-emoji-smile-fill mx-2"></i>
           </h4>
           <p>
             Optimize your outcomes by leveraging every available asset and
