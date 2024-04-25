@@ -8,6 +8,7 @@ import {
 import ColorThiefComponent from "./Pages/ColorThief/ColorThief";
 import Header from "./Components/Header/Header";
 import MySign from "./Pages/MySign/MySign";
+import Base64 from "./Pages/Base64/Base64";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
             <Route exact path="/" element={<Home/>}/>
             <Route exact path="/color-thief" element={<ColorThiefComponent/>} />
             <Route exact path="/my-sign" element={<MySign/>} />
+            <Route exact path="/base64" element={<Base64/>} />
           </Routes>
         </div>
       </Router>

@@ -33,18 +33,18 @@ const MySignaturePad = () => {
   return (
     <div className="container">
     <div className="row">
-      <div className="col-6 border rounded-4 ">
+      <div className="col-lg-6 col-md-12 col-sm-12 border rounded-4 ">
         <h2 className="text-center">Sign here</h2>
         <SignaturePad
           ref={signaturePadRef}
-          canvasProps={{ width: 500, height: 200, className: "signature-pad" }}
+          canvasProps={{ className: "border rounded-3" }}
         />
         <div className="d-flex align-items-center justify-content-center my-4">
           <button onClick={handleClear} className="btn btn-sm btn-danger mx-2">Clear</button>
           <button onClick={handleSave} className="btn btn-sm btn-primary">Save</button>
         </div>
       </div>
-      <div className="col-6 border rounded-4">
+      <div className="col-lg-6 col-md-12 col-sm-12 border rounded-4">
         {signatureData && (
           <div>
             <h2 className="text-center">Your Signature</h2>
