@@ -10,6 +10,7 @@ import Header from "./Components/Header/Header";
 import MySign from "./Pages/MySign/MySign";
 import Base64 from "./Pages/Base64/Base64";
 import ImageAvatar from "./Pages/ImageAvatar/ImageAvatar";
+import Base64_image from "./Pages/Base64-image/Base64-image";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
             <Route exact path="/my-sign" element={<MySign/>} />
             <Route exact path="/base64" element={<Base64/>} />
             <Route exact path="/image-avatar" element={<ImageAvatar/>} />
+            <Route exact path="/Base64_image" element={<Base64_image/>} />
           </Routes>
         </div>
       </Router>
