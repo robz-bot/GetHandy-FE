@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import tinycolor from "tinycolor2";
 import "./ColorThief.css";
 
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const ColorThiefComponent = () => {
   const [imageSrc, setImageSrc] = useState("");
@@ -137,6 +137,7 @@ const ColorThiefComponent = () => {
                           ...
                           <input
                             id="fileUpload"
+                            accept=".png,.jpeg,.jpg"
                             type="file"
                             onChange={handleImageUpload}
                           />
