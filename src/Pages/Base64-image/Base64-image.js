@@ -28,7 +28,10 @@ const Base64_image = () => {
   const handleDecode = () => {
     if (
       base64Image &&
-      base64Image.toString().includes("data:image/png;base64,")
+      (base64Image.toString().includes("data:image/png;base64,") ||
+        base64Image.toString().includes("data:image/jpeg;base64,") ||
+        base64Image.toString().includes("data:image/jpg;base64,") ||
+        base64Image.toString().includes("data:image/gif;base64,"))
     ) {
       setImageUrl(base64Image);
     } else {
