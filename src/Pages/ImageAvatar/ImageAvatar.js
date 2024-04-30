@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import AvatarEditor from "react-avatar-editor";
+import Breadcrums from "../../Components/Breadcrums/Breadcrums";
 const ImageAvatar = () => {
   const [image, setImage] = useState(null);
   const [scale, setScale] = useState(1);
@@ -35,6 +36,7 @@ const ImageAvatar = () => {
 
   return (
     <>
+      <Breadcrums />
       <div className="container">
         <div className="row">
           <div className="col-12">

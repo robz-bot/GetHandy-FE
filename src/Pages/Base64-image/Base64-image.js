@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Breadcrums from "../../Components/Breadcrums/Breadcrums";
 
 const Base64_image = () => {
   const [base64Image, setBase64Image] = useState("");
@@ -74,6 +75,7 @@ const Base64_image = () => {
 
   return (
     <>
+    <Breadcrums/>
       <div className="container">
         <div className=" row">
           <div className="col-2"></div>

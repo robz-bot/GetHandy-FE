@@ -3,6 +3,7 @@ import Base64 from "base-64";
 
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Breadcrums from "../../Components/Breadcrums/Breadcrums";
 const Base641 = () => {
   const [input, setInput] = useState("");
   const [encryptedText, setEncryptedText] = useState("");
@@ -74,6 +75,7 @@ const Base641 = () => {
 
   return (
     <>
+    <Breadcrums />
       <div className="container text-center ">
         <div className="d-flex align-items-center justify-content-center ">
           <div className="input-group mb-3 w-50 ">

@@ -2,192 +2,90 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const Home = () => {
+  const cardData = [
+    {
+      title: "Color Thief",
+      date: "Apr 23",
+      description: "Upload an image and get all possible colors!",
+      link: "/color-thief",
+      background:
+        "radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(115,194,237,1) 100%)",
+    },
+    {
+      title: "My Sign",
+      date: "Apr 24",
+      description: "Sign here and download it!",
+      link: "/my-sign",
+      background:
+        "radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(115,194,237,1) 100%)",
+    },
+    {
+      title: "Base64 Encrypt Decrypt",
+      date: "Apr 24",
+      description: "Encrypt/ Decrypt the text!",
+      link: "/base64",
+      background:
+        "radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(115,194,237,1) 100%)",
+    },
+    {
+      title: "Image Cropper",
+      date: "Apr 29",
+      description: "Upload your image, crop and download it!",
+      link: "/image-avatar",
+      background:
+        "radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(115,194,237,1) 100%)",
+    },
+    {
+      title: "Image <-> Base64 Convertor",
+      date: "Apr 29",
+      description: "Convert your image to Base64 and vice-versa!",
+      link: "/Base64_image",
+      background:
+        "radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(115,194,237,1) 100%)",
+    },
+    {
+      title: "Text Analyser",
+      date: "Apr 30",
+      description: "Analyse all the words, characters and sentence!",
+      link: "/count",
+      background:
+        "radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(115,194,237,1) 100%)",
+    },
+  ];
+
   return (
     <>
-      <div className="container">
+      <div className="container my-3">
         <div className="row mb-2 d-flex align-items-center justify-content-center">
-          <div className="col-md-4  ">
-            <div
-              className="row bg-white g-0 rounded-5 overflow-hidden flex-md-row mb-4 shadow-lg h-md-250 position-relative"
-              style={{ border: "2px solid black" }}
-            >
-              <div className="col p-4 d-flex flex-column position-static">
-                <h4 className="d-inline-block mb-2 text-primary-emphasis">
-                  Color Thief
-                </h4>
-                <small className="mb-1 text-body-secondary">Apr 23</small>
-                <small className="card-text mb-auto">
-                  Upload an image and get all possbile color!
-                </small>
-                <Link
-                  to="/color-thief"
-                  className="icon-link gap-1 icon-link-hover stretched-link badge text-primary"
-                >
-                  Use it
-                </Link>
-              </div>
-              <div className="col-auto d-none d-lg-block">
-                {/* <Link to="/color-thief">
-                  <img
-                    className="img-fluid rounded mb-3 mb-md-0"
-                    src="https://source.unsplash.com/random/356X250/?color"
-                    alt=""
-                    style={{ maxHeight: "185px" }}
-                  />
-                </Link> */}
+          {cardData.map((card, index) => (
+            <div key={index} className="col-md-4">
+              <div
+                className=" row bg-white g-0 rounded-5 overflow-hidden flex-md-row mb-4 shadow-lg h-md-250 position-relative text-dark"
+                style={{
+                  border: "1px solid grey",
+                  background: card.background,
+                }}
+              >
+                <div className="col p-4 d-flex flex-column position-static">
+                  <h5 className="text-center d-inline-block mb-2 text-primary-emphasis">
+                    {card.title}
+                    <Link
+                      to={card.link}
+                      className="text-end icon-link gap-1 icon-link-hover stretched-link badge text-primary"
+                    >
+                      <i className="bi bi-box-arrow-up-right text-dark"></i>
+                    </Link>
+                  </h5>
+                  <small className="badge text-primary mb-1 ">
+                    {card.date}
+                  </small>
+                  <small className="badge text-dark card-text mb-auto my-2 ">
+                    {card.description}
+                  </small>
+                </div>
               </div>
             </div>
-          </div>
-          <div className="col-md-4">
-            <div
-              className="row bg-white g-0 rounded-5 overflow-hidden flex-md-row mb-4 shadow-lg h-md-250 position-relative"
-              style={{ border: "2px solid black" }}
-            >
-              <div className="col p-4 d-flex flex-column position-static">
-                <h4 className="d-inline-block mb-2 text-primary-emphasis">
-                  My Sign
-                </h4>
-                <small className="mb-1 text-body-secondary">Apr 24</small>
-                <small className="card-text mb-auto">Sign here and download it!</small>
-                <Link
-                  to="/my-sign"
-                  className="icon-link gap-1 icon-link-hover stretched-link badge text-primary"
-                >
-                  Use it
-                </Link>
-              </div>
-              <div className="col-auto d-none d-lg-block">
-                {/* <Link to="/color-thief">
-                  <img
-                    className="img-fluid rounded mb-3 mb-md-0"
-                    src="https://source.unsplash.com/random/356X250/?signature"
-                    alt=""
-                    style={{ maxHeight: "185px" }}
-                  />
-                </Link> */}
-              </div>
-            </div>
-          </div>
-          <div className="col-md-4">
-            <div
-              className="row bg-white g-0 rounded-5 overflow-hidden flex-md-row mb-4 shadow-lg h-md-250 position-relative"
-              style={{ border: "2px solid black" }}
-            >
-              <div className="col p-4 d-flex flex-column position-static">
-                <h4 className="d-inline-block mb-2 text-primary-emphasis">
-                  Base64 Encrypt Decrypt
-                </h4>
-                <small className="mb-1 text-body-secondary">Apr 24</small>
-                <small className="card-text mb-auto">Encrypt/ Decrypt the text!</small>
-                <Link
-                  to="/base64"
-                  className="icon-link gap-1 icon-link-hover stretched-link badge text-primary"
-                >
-                  Use it
-                </Link>
-              </div>
-              <div className="col-auto d-none d-lg-block">
-                {/* <Link to="/color-thief">
-                  <img
-                    className="img-fluid rounded mb-3 mb-md-0"
-                    src="https://source.unsplash.com/random/356X250/?encrypt"
-                    alt=""
-                    style={{ maxHeight: "185px" }}
-                  />
-                </Link> */}
-              </div>
-            </div>
-          </div>
-          <div className="col-md-4">
-            <div
-              className="row bg-white g-0 rounded-5 overflow-hidden flex-md-row mb-4 shadow-lg h-md-250 position-relative"
-              style={{ border: "2px solid black" }}
-            >
-              <div className="col p-4 d-flex flex-column position-static">
-                <h4 className="d-inline-block mb-2 text-primary-emphasis">
-                Image Cropper
-                </h4>
-                <small className="mb-1 text-body-secondary">Apr 29</small>
-                <small className="card-text mb-auto">Upload your image, crop and download it!</small>
-                <Link
-                  to="/image-avatar"
-                  className="icon-link gap-1 icon-link-hover stretched-link badge text-primary"
-                >
-                  Use it
-                </Link>
-              </div>
-              <div className="col-auto d-none d-lg-block">
-                {/* <Link to="/image-avatar">
-                  <img
-                    className="img-fluid rounded mb-3 mb-md-0"
-                    src="https://source.unsplash.com/random/356X250/?avatar"
-                    alt=""
-                    style={{ maxHeight: "185px" }}
-                  />
-                </Link> */}
-              </div>
-            </div>
-          </div>
-          <div className="col-md-4">
-            <div
-              className="row bg-white g-0 rounded-5 overflow-hidden flex-md-row mb-4 shadow-lg h-md-250 position-relative"
-              style={{ border: "2px solid black" }}
-            >
-              <div className="col p-4 d-flex flex-column position-static">
-                <h4 className="d-inline-block mb-2 text-primary-emphasis">
-                Image <i class="bi bi-arrows-expand-vertical"></i> Base64 Convertor
-                </h4>
-                <small className="mb-1 text-body-secondary">Apr 29</small>
-                <small className="card-text mb-auto">Convert your image to Base64 and vice-versa!</small>
-                <Link
-                  to="/Base64_image"
-                  className="icon-link gap-1 icon-link-hover stretched-link badge text-primary"
-                >
-                  Use it
-                </Link>
-              </div>
-              <div className="col-auto d-none d-lg-block">
-                {/* <Link to="/Base64_image">
-                  <img
-                    className="img-fluid rounded mb-3 mb-md-0"
-                    src="https://source.unsplash.com/random/356X250/?convert"
-                    alt=""
-                    style={{ maxHeight: "185px" }}
-                  />
-                </Link> */}
-              </div>
-            </div>
-          </div>
-          <div className="col-md-4">
-            <div
-              className="row bg-white g-0 rounded-5 overflow-hidden flex-md-row mb-4 shadow-lg h-md-250 position-relative"
-              style={{ border: "2px solid black" }}
-            >
-              <div className="col p-4 d-flex flex-column position-static">
-                <h4 className="d-inline-block mb-2 text-primary-emphasis">
-                Text Analyser
-                </h4>
-                <small className="mb-1 text-body-secondary">Apr 30</small>
-                <small className="card-text mb-auto">Analyse all the words, characters and sentence!</small>
-                <Link
-                  to="/count"
-                  className="icon-link gap-1 icon-link-hover stretched-link badge text-primary"
-                >
-                  Use it
-                </Link>
-              </div>
-              <div className="col-auto d-none d-lg-block">
-                {/* <Link to="/count">
-                  <img
-                    className="img-fluid rounded mb-3 mb-md-0"
-                    src="https://source.unsplash.com/random/356X250/?numbers"
-                    alt=""
-                    style={{ maxHeight: "185px" }}
-                  />
-                </Link> */}
-              </div>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </>

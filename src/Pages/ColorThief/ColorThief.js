@@ -4,6 +4,7 @@ import "./ColorThief.css";
 
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Breadcrums from "../../Components/Breadcrums/Breadcrums";
 
 const ColorThiefComponent = () => {
   const [imageSrc, setImageSrc] = useState("");
@@ -112,6 +113,7 @@ const ColorThiefComponent = () => {
 
   return (
     <>
+      <Breadcrums />
       <div className="container">
         <div className="row">
           <div className="col-12">
