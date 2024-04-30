@@ -10,6 +10,7 @@ import Base64_image from "./Pages/Base64-image/Base64-image";
 import Count from "./Pages/Count/Count";
 import Footer from "./Components/Footer/Footer";
 import NumberToWordsConverter from "./Pages/NumToWords/NumToWords";
+import ImageTextExtractor from "./Pages/ImageToText/ImageToText";
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
             <Route exact path="/Base64_image" element={<Base64_image />} />
             <Route exact path="/count" element={<Count />} />
             <Route exact path="/num-to-words" element={<NumberToWordsConverter />} />
+            <Route exact path="/image-text" element={<ImageTextExtractor />} />
           </Routes>
           <Footer />
         </div>

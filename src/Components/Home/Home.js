@@ -56,8 +56,16 @@ const Home = () => {
     {
       title: "Text Transformation",
       date: "Apr 30",
-      description: "Num - Text & possible text tranformation!",
+      description: "Num - Text & possible text tranformations!",
       link: "/num-to-words",
+      background:
+        "radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(115,194,237,1) 100%)",
+    },
+    {
+      title: "Text Extractor",
+      date: "Apr 30",
+      description: "Upload an image and extract text!",
+      link: "/image-text",
       background:
         "radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(115,194,237,1) 100%)",
     },
@@ -76,7 +84,7 @@ const Home = () => {
             type="text"
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
-            className="form-control form-control-sm my-2 w-75"
+            className="form-control form-control-sm my-4 w-75"
             placeholder="Search by Title..."
           />
         </div>

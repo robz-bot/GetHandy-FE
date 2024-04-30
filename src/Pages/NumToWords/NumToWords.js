@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import numberToWords from "number-to-words";
 import _ from "lodash";
+import Breadcrums from "../../Components/Breadcrums/Breadcrums";
 
 const NumberToWordsConverter = () => {
   const [number, setNumber] = useState(0);
@@ -43,6 +44,7 @@ const NumberToWordsConverter = () => {
 
   return (
     <>
+      <Breadcrums />
       <div class="container input-group mb-3">
         <label class="input-group-text" for="inputGroupSelect01">
           Choose your tranformation
