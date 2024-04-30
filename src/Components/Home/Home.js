@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 const Home = () => {
+  const [searchQuery, setSearchQuery] = useState(""); // State for search query
+
   const cardData = [
     {
       title: "Color Thief",
@@ -53,11 +55,25 @@ const Home = () => {
     },
   ];
 
+  // Filter the cardData based on search query
+  const filteredCardData = cardData.filter((card) =>
+    card.title.toLowerCase().includes(searchQuery.toLowerCase())
+  );
+
   return (
     <>
-      <div className="container my-3">
-        <div className="row mb-2 d-flex align-items-center justify-content-center">
-          {cardData.map((card, index) => (
+      <div className="container">
+        <div className="d-flex justify-content-center align-items-center ">
+          <input
+            type="text"
+            value={searchQuery}
+            onChange={(e) => setSearchQuery(e.target.value)}
+            className="form-control form-control-sm my-2 w-75"
+            placeholder="Search by Title..."
+          />
+        </div>
+        <div className="row mb-3 d-flex align-items-center justify-content-center">
+          {filteredCardData.map((card, index) => (
             <div key={index} className="col-md-4">
               <div
                 className=" row bg-white g-0 rounded-5 overflow-hidden flex-md-row mb-4 shadow-lg h-md-250 position-relative text-dark"

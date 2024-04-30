@@ -88,7 +88,7 @@ const Base64_image = () => {
                   ? "linear-gradient(175deg, rgba(37,78,128,1) 0%, rgba(85,170,215,1) 38%)"
                   : "black",
             }}
-            onClick={() => setType("IB")}
+            onClick={() => {setType("IB"); setBase64Image("")}}
           >
             <h5 className="text-center fw-bold text-light">
               Convert From Image to Base64
@@ -103,7 +103,7 @@ const Base64_image = () => {
                   ? "linear-gradient(175deg, rgba(37,78,128,1) 0%, rgba(85,170,215,1) 38%)"
                   : "black",
             }}
-            onClick={() => setType("BI")}
+            onClick={() => {setType("BI"); setBase64Image("")}}
           >
             <h5 className="text-center fw-bold text-light">
               Convert From Base64 to Image
