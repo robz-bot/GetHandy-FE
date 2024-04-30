@@ -26,6 +26,9 @@ const Breadcrums = () => {
     else if (currentUrl.includes("count")) {
       setUrlName("TEXT ANALYSER");
     }
+    else if (currentUrl.includes("num-to-words")) {
+      setUrlName("NUMBER TO WORDS CONVERTOR");
+    }
   }, []);
 
   return (

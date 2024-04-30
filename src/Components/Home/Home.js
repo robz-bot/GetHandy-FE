@@ -53,6 +53,14 @@ const Home = () => {
       background:
         "radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(115,194,237,1) 100%)",
     },
+    {
+      title: "Text Transformation",
+      date: "Apr 30",
+      description: "Num - Text & possible text tranformation!",
+      link: "/num-to-words",
+      background:
+        "radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(115,194,237,1) 100%)",
+    },
   ];
 
   // Filter the cardData based on search query
@@ -95,7 +103,7 @@ const Home = () => {
                   <small className="badge text-primary mb-1 ">
                     {card.date}
                   </small>
-                  <small className="badge text-dark card-text mb-auto my-2 ">
+                  <small className="text-wrap badge text-dark card-text mb-auto my-2 ">
                     {card.description}
                   </small>
                 </div>

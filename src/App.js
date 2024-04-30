@@ -9,6 +9,7 @@ import ImageAvatar from "./Pages/ImageAvatar/ImageAvatar";
 import Base64_image from "./Pages/Base64-image/Base64-image";
 import Count from "./Pages/Count/Count";
 import Footer from "./Components/Footer/Footer";
+import NumberToWordsConverter from "./Pages/NumToWords/NumToWords";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
             <Route exact path="/image-avatar" element={<ImageAvatar />} />
             <Route exact path="/Base64_image" element={<Base64_image />} />
             <Route exact path="/count" element={<Count />} />
+            <Route exact path="/num-to-words" element={<NumberToWordsConverter />} />
           </Routes>
           <Footer />
         </div>
