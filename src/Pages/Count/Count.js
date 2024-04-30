@@ -48,7 +48,7 @@ function Count() {
           {counts.characters && (
             <>
               <h3>MAJOR COUNTS</h3>
-              <ol className="list-group list-group-horizontal ">
+              <ol className="d-flex flex-wrap">
                 <li className="list-group-item d-flex  align-items-start">
                   <div className="ms-2 me-auto">
                     <div className="fw-bold">Characters</div>
@@ -86,7 +86,7 @@ function Count() {
           )}
           {counts.all && (
             <>
-              <h3 className="my-3">Individual count</h3>
+              <h3 className="my-3">INDIVIDUAL COUNT</h3>
               <div className="">
                 <ul className="d-flex flex-wrap">
                   {Object.entries(counts.all).map(([key, value]) => (

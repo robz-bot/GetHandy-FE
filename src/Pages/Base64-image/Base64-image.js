@@ -119,7 +119,7 @@ const Base64_image = () => {
           <input
             type="file"
             accept=".png,.jpeg,.jpg"
-            className="text-center form-control form-control-sm w-50"
+            className="text-center form-control form-control-sm w-75"
             onChange={handleImageChange}
           />
           {base64Image && (
