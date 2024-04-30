@@ -116,6 +116,7 @@ const Base64_image = () => {
           <p>Upload an image file and convert into base64</p>
           <input
             type="file"
+            accept=".png,.jpeg,.jpg"
             className="text-center form-control form-control-sm w-50"
             onChange={handleImageChange}
           />

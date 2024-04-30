@@ -43,7 +43,7 @@ const ImageAvatar = () => {
                 <div class="row">
                   <div class="col-lg-5 mx-auto d-flex  align-items-center justify-content-center">
                     <div class="p-5 bg-white shadow rounded-lg text-center">
-                      <h4 className="fw-bold">IMAGE AVATAR</h4>
+                      <h4 className="fw-bold">IMAGE CROPPER</h4>
                       <img
                         src="https://res.cloudinary.com/mhmd/image/upload/v1557366994/img_epm3iz.png"
                         alt=""

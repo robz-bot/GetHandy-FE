@@ -11,6 +11,7 @@ import MySign from "./Pages/MySign/MySign";
 import Base64 from "./Pages/Base64/Base64";
 import ImageAvatar from "./Pages/ImageAvatar/ImageAvatar";
 import Base64_image from "./Pages/Base64-image/Base64-image";
+import Count from "./Pages/Count/Count";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
             <Route exact path="/base64" element={<Base64/>} />
             <Route exact path="/image-avatar" element={<ImageAvatar/>} />
             <Route exact path="/Base64_image" element={<Base64_image/>} />
+            <Route exact path="/count" element={<Count/>} />
           </Routes>
         </div>
       </Router>
