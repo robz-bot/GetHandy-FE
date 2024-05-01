@@ -8,31 +8,24 @@ const Breadcrums = () => {
   const [currentUrl, setCurrentUrl] = useState(window.location.href);
 
   useEffect(() => {
-    if (currentUrl.includes("color-thief")) {
-      setUrlName("COLOR THIEF");
+    const urlMap = {
+      "color-thief": "COLOR THIEF",
+      "image-avatar": "IMAGE CROPPER",
+      "my-sign": "MY SIGN",
+      "base64": "BASE64 ENCRYPT DECRYPT",
+      "Base64_image": "IMAGE <-> BASE64 CONVERTOR",
+      "count": "TEXT ANALYSER",
+      "num-to-words": "TEXT TRANSFORMATION",
+      "image-text": "IMAGE TEXT EXTARCTOR",
+      "text-speech": "TEXT TO SPEECH"
+    };
+  
+    const matchingKey = Object.keys(urlMap).find(key => currentUrl.includes(key));
+    if (matchingKey) {
+      setUrlName(urlMap[matchingKey]);
     }
-    else if (currentUrl.includes("image-avatar")) {
-      setUrlName("IMAGE CROPPER");
-    }
-    else if (currentUrl.includes("my-sign")) {
-      setUrlName("MY SIGN");
-    }
-    else if (currentUrl.includes("base64")) {
-      setUrlName("BASE64 ENCRYPT DECRYPT");
-    }
-    else if (currentUrl.includes("Base64_image")) {
-      setUrlName("IMAGE <-> BASE64 CONVERTOR");
-    }
-    else if (currentUrl.includes("count")) {
-      setUrlName("TEXT ANALYSER");
-    }
-    else if (currentUrl.includes("num-to-words")) {
-      setUrlName("TEXT TRANSFORMATION");
-    }
-    else if (currentUrl.includes("image-text")) {
-      setUrlName("IMAGE TEXT EXTARCTOR");
-    }
-  }, []);
+  }, [currentUrl]);
+  
 
   return (
     <div>
@@ -48,7 +41,7 @@ const Breadcrums = () => {
               </Link>
             </li>
             <li class="breadcrumb-item active" aria-current="page">
-            <i class="bi bi-link-45deg"></i> {urlName}
+              <i class="bi bi-link-45deg"></i> {urlName}
             </li>
           </ol>
         </nav>

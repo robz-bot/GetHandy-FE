@@ -11,6 +11,7 @@ import Count from "./Pages/Count/Count";
 import Footer from "./Components/Footer/Footer";
 import NumberToWordsConverter from "./Pages/NumToWords/NumToWords";
 import ImageTextExtractor from "./Pages/ImageToText/ImageToText";
+import TextToSpeech from "./Pages/Text-Speech/Text-Speech";
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
             <Route exact path="/count" element={<Count />} />
             <Route exact path="/num-to-words" element={<NumberToWordsConverter />} />
             <Route exact path="/image-text" element={<ImageTextExtractor />} />
+            <Route exact path="/text-speech" element={<TextToSpeech />} />
           </Routes>
           <Footer />
         </div>

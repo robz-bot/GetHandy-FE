@@ -4,7 +4,13 @@ export default function Footer() {
   return (
     <>
       <div class=" container d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
-        <p>© 2024 Get Handy <i class="bi bi-hand-index-thumb"></i> -  All rights reserved.</p>
+        <p>
+          © 2024
+          <span className="mx-1 text-primary fw-bold ">
+            Get Handy <i class="bi bi-hand-index-thumb-fill"></i>
+          </span>
+          - All rights reserved.
+        </p>
         <ul class="list-unstyled d-flex">
           <li class="ms-3">
             Developed By Robin Rajesh

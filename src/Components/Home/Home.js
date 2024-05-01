@@ -69,6 +69,14 @@ const Home = () => {
       background:
         "radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(115,194,237,1) 100%)",
     },
+    {
+      title: "Text to Speech",
+      date: "Apr 30",
+      description: "Write a text convert into speech!",
+      link: "/text-speech",
+      background:
+        "radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(115,194,237,1) 100%)",
+    },
   ];
 
   // Filter the cardData based on search query
@@ -87,6 +95,9 @@ const Home = () => {
             className="form-control form-control-sm my-4 w-75"
             placeholder="Search by Title..."
           />
+          <p className="m-4 badge text-dark bg-info">
+            Total Assets: {filteredCardData.length}
+          </p>
         </div>
         <div className="row mb-3 d-flex align-items-center justify-content-center">
           {filteredCardData.map((card, index) => (
