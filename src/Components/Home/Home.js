@@ -7,7 +7,7 @@ const Home = () => {
   const cardData = [
     {
       title: "Color Thief",
-      date: "Apr 23",
+      date: "Apr 23, 2024",
       description: "Upload an image and get all possible colors!",
       link: "/color-thief",
       background:
@@ -15,7 +15,7 @@ const Home = () => {
     },
     {
       title: "My Sign",
-      date: "Apr 24",
+      date: "Apr 24, 2024",
       description: "Sign here and download it!",
       link: "/my-sign",
       background:
@@ -23,7 +23,7 @@ const Home = () => {
     },
     {
       title: "Base64 Encrypt Decrypt",
-      date: "Apr 24",
+      date: "Apr 24, 2024",
       description: "Encrypt/ Decrypt the text!",
       link: "/base64",
       background:
@@ -31,7 +31,7 @@ const Home = () => {
     },
     {
       title: "Image Cropper",
-      date: "Apr 29",
+      date: "Apr 29, 2024",
       description: "Upload your image, crop and download it!",
       link: "/image-avatar",
       background:
@@ -39,7 +39,7 @@ const Home = () => {
     },
     {
       title: "Image <-> Base64 Convertor",
-      date: "Apr 29",
+      date: "Apr 29, 2024",
       description: "Convert your image to Base64 and vice-versa!",
       link: "/Base64_image",
       background:
@@ -47,7 +47,7 @@ const Home = () => {
     },
     {
       title: "Text Analyser",
-      date: "Apr 30",
+      date: "Apr 30, 2024",
       description: "Analyse all the words, characters and sentence!",
       link: "/count",
       background:
@@ -55,7 +55,7 @@ const Home = () => {
     },
     {
       title: "Text Transformation",
-      date: "Apr 30",
+      date: "Apr 30, 2024",
       description: "Num - Text & possible text tranformations!",
       link: "/num-to-words",
       background:
@@ -63,7 +63,7 @@ const Home = () => {
     },
     {
       title: "Text Extractor",
-      date: "Apr 30",
+      date: "Apr 30, 2024",
       description: "Upload an image and extract text!",
       link: "/image-text",
       background:
@@ -71,9 +71,17 @@ const Home = () => {
     },
     {
       title: "Text to Speech",
-      date: "Apr 30",
+      date: "Apr 30, 2024",
       description: "Write a text convert into speech!",
       link: "/text-speech",
+      background:
+        "radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(115,194,237,1) 100%)",
+    },
+    {
+      title: "JPG to PDF",
+      date: "May 01, 2024",
+      description: "Upload your JPG files and download it as PDF!",
+      link: "/jpg-pdf",
       background:
         "radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(115,194,237,1) 100%)",
     },
@@ -95,11 +103,15 @@ const Home = () => {
             className="form-control form-control-sm my-4 w-75"
             placeholder="Search by Title..."
           />
-          <p className="m-4 badge text-dark bg-info">
+          <p className="m-4 badge bg-secondary ">
             Total Assets: {filteredCardData.length}
           </p>
         </div>
-        <div className="row mb-3 d-flex align-items-center justify-content-center">
+        <small className="m-3 fw-bold ">Most popular tags:</small>
+        <span className="mx-2 badge bg-danger">text</span>
+        <span className="mx-2 badge bg-warning text-dark">image</span>
+        <span className="mx-2 badge bg-info text-dark">base64</span>
+        <div className="row my-4 mb-3 d-flex align-items-center justify-content-center">
           {filteredCardData.map((card, index) => (
             <div key={index} className="col-md-4">
               <div

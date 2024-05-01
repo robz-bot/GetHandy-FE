@@ -12,20 +12,22 @@ const Breadcrums = () => {
       "color-thief": "COLOR THIEF",
       "image-avatar": "IMAGE CROPPER",
       "my-sign": "MY SIGN",
-      "base64": "BASE64 ENCRYPT DECRYPT",
-      "Base64_image": "IMAGE <-> BASE64 CONVERTOR",
-      "count": "TEXT ANALYSER",
+      base64: "BASE64 ENCRYPT DECRYPT",
+      Base64_image: "IMAGE <-> BASE64 CONVERTOR",
+      count: "TEXT ANALYSER",
       "num-to-words": "TEXT TRANSFORMATION",
       "image-text": "IMAGE TEXT EXTARCTOR",
-      "text-speech": "TEXT TO SPEECH"
+      "text-speech": "TEXT TO SPEECH",
+      "jpg-pdf": "JPG TO PDF",
     };
-  
-    const matchingKey = Object.keys(urlMap).find(key => currentUrl.includes(key));
+
+    const matchingKey = Object.keys(urlMap).find((key) =>
+      currentUrl.includes(key)
+    );
     if (matchingKey) {
       setUrlName(urlMap[matchingKey]);
     }
   }, [currentUrl]);
-  
 
   return (
     <div>
