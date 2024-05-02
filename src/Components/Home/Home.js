@@ -86,7 +86,7 @@ const Home = () => {
         "radial-gradient(circle, rgb(255, 255, 255) 0%, rgb(205, 217, 224) 100%)",
     },
     {
-      title: "JSON to XML",
+      title: "JSON <-> XML",
       date: "May 02, 2024",
       description: "Convert your JSON to XML and vice-versa!",
       link: "/json-xml",
@@ -100,6 +100,14 @@ const Home = () => {
       link: "/faker",
       background:
         "radial-gradient(circle, rgb(255, 255, 255) 0%, rgb(224, 320, 205) 100%)",
+    },
+    {
+      title: "PDF METADATA",
+      date: "May 02, 2024",
+      description: "Get a random faker data instant!",
+      link: "/pdf-meta-data",
+      background:
+        "radial-gradient(circle, rgb(255, 255, 255) 0%, rgb(100, 140, 205) 100%)",
     },
   ];
 
@@ -129,7 +137,7 @@ const Home = () => {
         <span className="mx-2 badge bg-info text-dark">base64</span>
         <div className="row my-4 mb-3 d-flex align-items-center justify-content-center">
           {filteredCardData.map((card, index) => (
-            <div key={index} className="col-md-4">
+            <div key={index} className="col-md-6 col-lg-4 col-sm-12">
               <div
                 className=" row bg-white g-0 rounded-5 overflow-hidden flex-md-row mb-4 shadow-lg h-md-250 position-relative text-dark"
                 style={{

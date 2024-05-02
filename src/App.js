@@ -15,6 +15,7 @@ import TextToSpeech from "./Pages/Text-Speech/Text-Speech";
 import JpgToPdfConverter from "./Pages/Jpg-pdf/Jpg-pdf";
 import JsonToXmlConverter from "./Pages/JsonToXmlConverter/JsonToXmlConverter";
 import FakerObj from "./Pages/FakerObj/FakerObj";
+import PDFMetadataDisplay from "./Pages/PDFMetaData/PDFMetaData";
 
 function App() {
   return (
@@ -40,6 +41,7 @@ function App() {
             <Route exact path="/jpg-pdf" element={<JpgToPdfConverter />} />
             <Route exact path="/json-xml" element={<JsonToXmlConverter />} />
             <Route exact path="/faker" element={<FakerObj />} />
+            <Route exact path="/pdf-meta-data" element={<PDFMetadataDisplay />} />
           </Routes>
           <Footer />
         </div>

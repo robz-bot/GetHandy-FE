@@ -13,6 +13,7 @@
     "node-vibrant": "^3.2.1-alpha.1",
     "npm": "^10.5.2",
     "number-to-words": "^1.2.4",
+    "pdfjs-dist": "^4.2.67",
     "react": "^18.2.0",
     "react-avatar-editor": "^13.0.2",
     "react-dom": "^18.2.0",
