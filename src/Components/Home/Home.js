@@ -93,6 +93,14 @@ const Home = () => {
       background:
         "radial-gradient(circle, rgb(255, 255, 255) 0%, rgb(224, 209, 205) 100%)",
     },
+    {
+      title: "FAKER",
+      date: "May 02, 2024",
+      description: "Get a random faker data instant!",
+      link: "/faker",
+      background:
+        "radial-gradient(circle, rgb(255, 255, 255) 0%, rgb(224, 320, 205) 100%)",
+    },
   ];
 
   // Filter the cardData based on search query

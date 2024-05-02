@@ -14,6 +14,7 @@ import ImageTextExtractor from "./Pages/ImageToText/ImageToText";
 import TextToSpeech from "./Pages/Text-Speech/Text-Speech";
 import JpgToPdfConverter from "./Pages/Jpg-pdf/Jpg-pdf";
 import JsonToXmlConverter from "./Pages/JsonToXmlConverter/JsonToXmlConverter";
+import FakerObj from "./Pages/FakerObj/FakerObj";
 
 function App() {
   return (
@@ -38,6 +39,7 @@ function App() {
             <Route exact path="/text-speech" element={<TextToSpeech />} />
             <Route exact path="/jpg-pdf" element={<JpgToPdfConverter />} />
             <Route exact path="/json-xml" element={<JsonToXmlConverter />} />
+            <Route exact path="/faker" element={<FakerObj />} />
           </Routes>
           <Footer />
         </div>
