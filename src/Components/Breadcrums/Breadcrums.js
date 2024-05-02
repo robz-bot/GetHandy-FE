@@ -19,6 +19,7 @@ const Breadcrums = () => {
       "image-text": "IMAGE TEXT EXTARCTOR",
       "text-speech": "TEXT TO SPEECH",
       "jpg-pdf": "JPG TO PDF",
+      "json-xml": "JSON <-> XML",
     };
 
     const matchingKey = Object.keys(urlMap).find((key) =>

@@ -13,6 +13,7 @@ import NumberToWordsConverter from "./Pages/NumToWords/NumToWords";
 import ImageTextExtractor from "./Pages/ImageToText/ImageToText";
 import TextToSpeech from "./Pages/Text-Speech/Text-Speech";
 import JpgToPdfConverter from "./Pages/Jpg-pdf/Jpg-pdf";
+import JsonToXmlConverter from "./Pages/JsonToXmlConverter/JsonToXmlConverter";
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
             <Route exact path="/image-text" element={<ImageTextExtractor />} />
             <Route exact path="/text-speech" element={<TextToSpeech />} />
             <Route exact path="/jpg-pdf" element={<JpgToPdfConverter />} />
+            <Route exact path="/json-xml" element={<JsonToXmlConverter />} />
           </Routes>
           <Footer />
         </div>

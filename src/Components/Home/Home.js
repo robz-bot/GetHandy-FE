@@ -19,7 +19,7 @@ const Home = () => {
       description: "Sign here and download it!",
       link: "/my-sign",
       background:
-        "radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(115,194,237,1) 100%)",
+        "radial-gradient(circle, rgb(255, 255, 255) 0%, rgb(237 195 115) 100%)",
     },
     {
       title: "Base64 Encrypt Decrypt",
@@ -27,7 +27,7 @@ const Home = () => {
       description: "Encrypt/ Decrypt the text!",
       link: "/base64",
       background:
-        "radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(115,194,237,1) 100%)",
+        "radial-gradient(circle, rgb(255, 255, 255) 0%, rgb(115 237 142) 100%)",
     },
     {
       title: "Image Cropper",
@@ -35,7 +35,7 @@ const Home = () => {
       description: "Upload your image, crop and download it!",
       link: "/image-avatar",
       background:
-        "radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(115,194,237,1) 100%)",
+        "radial-gradient(circle, rgb(255, 255, 255) 0%, rgb(245, 176, 113) 100%)",
     },
     {
       title: "Image <-> Base64 Convertor",
@@ -43,7 +43,7 @@ const Home = () => {
       description: "Convert your image to Base64 and vice-versa!",
       link: "/Base64_image",
       background:
-        "radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(115,194,237,1) 100%)",
+        "radial-gradient(circle, rgb(255, 255, 255) 0%, rgb(232, 191, 229) 100%)",
     },
     {
       title: "Text Analyser",
@@ -51,7 +51,7 @@ const Home = () => {
       description: "Analyse all the words, characters and sentence!",
       link: "/count",
       background:
-        "radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(115,194,237,1) 100%)",
+        "radial-gradient(circle, rgb(255, 255, 255) 0%, rgb(240, 228, 159) 100%)",
     },
     {
       title: "Text Transformation",
@@ -59,7 +59,7 @@ const Home = () => {
       description: "Num - Text & possible text tranformations!",
       link: "/num-to-words",
       background:
-        "radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(115,194,237,1) 100%)",
+        "radial-gradient(circle, rgb(255, 255, 255) 0%, rgb(173, 217, 238) 100%)",
     },
     {
       title: "Text Extractor",
@@ -67,7 +67,7 @@ const Home = () => {
       description: "Upload an image and extract text!",
       link: "/image-text",
       background:
-        "radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(115,194,237,1) 100%)",
+        "radial-gradient(circle, rgb(255, 255, 255) 0%, rgb(223, 219, 187) 100%)",
     },
     {
       title: "Text to Speech",
@@ -75,7 +75,7 @@ const Home = () => {
       description: "Write a text convert into speech!",
       link: "/text-speech",
       background:
-        "radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(115,194,237,1) 100%)",
+        "radial-gradient(circle, rgb(255, 255, 255) 0%, rgb(242, 204, 171) 100%)",
     },
     {
       title: "JPG to PDF",
@@ -83,7 +83,15 @@ const Home = () => {
       description: "Upload your JPG files and download it as PDF!",
       link: "/jpg-pdf",
       background:
-        "radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(115,194,237,1) 100%)",
+        "radial-gradient(circle, rgb(255, 255, 255) 0%, rgb(205, 217, 224) 100%)",
+    },
+    {
+      title: "JSON to XML",
+      date: "May 02, 2024",
+      description: "Convert your JSON to XML and vice-versa!",
+      link: "/json-xml",
+      background:
+        "radial-gradient(circle, rgb(255, 255, 255) 0%, rgb(224, 209, 205) 100%)",
     },
   ];
 
