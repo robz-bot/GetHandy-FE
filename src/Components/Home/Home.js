@@ -102,10 +102,10 @@ const Home = () => {
         "radial-gradient(circle, rgb(255, 255, 255) 0%, rgb(224, 320, 205) 100%)",
     },
     {
-      title: "PDF METADATA",
-      date: "May 02, 2024",
-      description: "Get a random faker data instant!",
-      link: "/pdf-meta-data",
+      title: "LENGTH CONVERTOR",
+      date: "May 03, 2024",
+      description: "Convertion of m, km, ft, mi!",
+      link: "/length-convertor",
       background:
         "radial-gradient(circle, rgb(255, 255, 255) 0%, rgb(100, 140, 205) 100%)",
     },
