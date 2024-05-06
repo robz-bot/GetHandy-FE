@@ -109,6 +109,14 @@ const Home = () => {
       background:
         "radial-gradient(circle, rgb(255, 255, 255) 0%, rgb(100, 140, 205) 100%)",
     },
+    {
+      title: "TIMEZONE",
+      date: "May 06, 2024",
+      description: "Get all possible timezone in world!",
+      link: "/timezone",
+      background:
+        "radial-gradient(circle, rgb(255, 255, 255) 0%, rgb(100, 80, 205) 100%)",
+    },
   ];
 
   // Filter the cardData based on search query
