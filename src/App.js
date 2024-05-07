@@ -16,8 +16,8 @@ import JpgToPdfConverter from "./Pages/Jpg-pdf/Jpg-pdf";
 import JsonToXmlConverter from "./Pages/JsonToXmlConverter/JsonToXmlConverter";
 import FakerObj from "./Pages/FakerObj/FakerObj";
 import LengthConverter from "./Pages/LengthConvertor/LengthConvertor";
-import ScreenshotCapture from "./Pages/Timezone/Timezone";
 import TimezoneList from "./Pages/Timezone/Timezone";
+import InternetSpeedTest from "./Pages/InternetMeter/InternetMeter";
 
 function App() {
   return (
@@ -45,6 +45,7 @@ function App() {
             <Route exact path="/faker" element={<FakerObj />} />
             <Route exact path="/length-convertor" element={<LengthConverter />} />
             <Route exact path="/timezone" element={<TimezoneList />} />
+            <Route exact path="/internet-meter" element={<InternetSpeedTest />} />
           </Routes>
           <Footer />
         </div>

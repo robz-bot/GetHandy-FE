@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import Advantages from "../Advantages/Advantages";
 
 const Home = () => {
   const [searchQuery, setSearchQuery] = useState(""); // State for search query
@@ -117,6 +118,14 @@ const Home = () => {
       background:
         "radial-gradient(circle, rgb(255, 255, 255) 0%, rgb(100, 80, 205) 100%)",
     },
+    // {
+    //   title: "INTERNET METER",
+    //   date: "May 06, 2024",
+    //   description: "Internet speed meter test!",
+    //   link: "/internet-meter",
+    //   background:
+    //     "radial-gradient(circle, rgb(255, 255, 255) 0%, rgb(100, 180, 205) 100%)",
+    // },
   ];
 
   // Filter the cardData based on search query
@@ -150,7 +159,7 @@ const Home = () => {
                 className=" row bg-white g-0 rounded-5 overflow-hidden flex-md-row mb-4 shadow-lg h-md-250 position-relative text-dark"
                 style={{
                   border: "1px solid grey",
-                  background: card.background,
+                  // background: card.background,
                 }}
               >
                 <div className="col p-4 d-flex flex-column position-static">
@@ -174,6 +183,7 @@ const Home = () => {
             </div>
           ))}
         </div>
+        <Advantages/>
       </div>
     </>
   );
