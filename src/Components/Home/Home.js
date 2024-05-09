@@ -118,14 +118,14 @@ const Home = () => {
       background:
         "radial-gradient(circle, rgb(255, 255, 255) 0%, rgb(100, 80, 205) 100%)",
     },
-    // {
-    //   title: "INTERNET METER",
-    //   date: "May 06, 2024",
-    //   description: "Internet speed meter test!",
-    //   link: "/internet-meter",
-    //   background:
-    //     "radial-gradient(circle, rgb(255, 255, 255) 0%, rgb(100, 180, 205) 100%)",
-    // },
+    {
+      title: "QUICK PDF",
+      date: "May 09, 2024",
+      description: "Write your content download it as PDF!",
+      link: "/pdf-maker",
+      background:
+        "radial-gradient(circle, rgb(255, 255, 255) 0%, rgb(100, 180, 205) 100%)",
+    },
   ];
 
   // Filter the cardData based on search query

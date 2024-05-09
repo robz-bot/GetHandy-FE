@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import moment from "moment-timezone";
+import Breadcrums from "../../Components/Breadcrums/Breadcrums";
 
 const TimezoneList = () => {
   const [timezones, setTimezones] = useState([]);
@@ -23,6 +24,8 @@ const TimezoneList = () => {
   );
 
   return (
+    <>
+    <Breadcrums />
     <div className="container">
       <h3 className="text-center">All Timezones</h3>
       <div className="input-group mb-3">
@@ -60,6 +63,7 @@ const TimezoneList = () => {
         ))}
       </ul>
     </div>
+    </>
   );
 };
 

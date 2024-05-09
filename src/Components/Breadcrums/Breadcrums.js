@@ -22,6 +22,8 @@ const Breadcrums = () => {
       "json-xml": "JSON <-> XML",
       "faker": "FAKER",
       "length-convertor": "LENGTH CONVERTOR",
+      "timezone": "TIMEZONE",
+      "pdf-maker": "PDF MAKER",
     };
 
     const matchingKey = Object.keys(urlMap).find((key) =>
