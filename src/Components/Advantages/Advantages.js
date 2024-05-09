@@ -36,9 +36,7 @@ export default function () {
             <small className=" ">
               Having all the tools conveniently located in one place, with a
               straightforward and user-friendly interface, simplifies the
-              process of accessing what you require. Instant access to
-              everything is readily available, making tasks effortless and
-              efficient.
+              process of accessing what you require.
             </small>
           </div>
           <div class="col-lg-4">

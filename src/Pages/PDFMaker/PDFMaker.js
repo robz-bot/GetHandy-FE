@@ -39,14 +39,18 @@ const PDFGenerator = () => {
     const htmlParser = new DOMParser();
     const parsedHtml = htmlParser.parseFromString(editorText, "text/html");
 
-    const content = `<html>${parsedHtml.childNodes[0].innerHTML}</html>`;
+    const content = `<html><div style="margin: 20px;">${parsedHtml.childNodes[0].innerHTML}</div></html>`;
     console.log({ content });
     if (content) {
       const options = {
         filename: "generated_pdf.pdf",
         image: { type: "jpeg", quality: 0.98 },
         html2canvas: { scale: 2 },
-        jsPDF: { unit: "in", format: "letter", orientation: "portrait" },
+        jsPDF: {
+          unit: "in",
+          format: "letter",
+          orientation: "portrait",
+        },
       };
 
       // Generate PDF
@@ -56,52 +60,53 @@ const PDFGenerator = () => {
 
   return (
     <>
-    <Breadcrums />
-    <h4 className="text-center">PDF Maker</h4>
-    <div className="container d-flex align-content-center align-items-center flex-column">
-      <ReactQuill
-        value={editorText}
-        onChange={handleChange}
-        modules={{
-          toolbar: [
-            [{ header: "1" }, { header: "2" }, { font: [] }],
-            [{ size: [] }],
-            ["bold", "italic", "underline", "strike", "blockquote"],
-            [
-              { list: "ordered" },
-              { list: "bullet" },
-              { indent: "-1" },
-              { indent: "+1" },
+      <Breadcrums />
+      <h4 className="text-center">QUICK PDF</h4>
+      <div className="container d-flex align-content-center align-items-center flex-column">
+        <ReactQuill
+          value={editorText}
+          onChange={handleChange}
+          modules={{
+            toolbar: [
+              [{ header: "1" }, { header: "2" }, { font: [] }],
+              [{ size: [] }],
+              ["bold", "italic", "underline", "strike", "blockquote"],
+              [
+                { list: "ordered" },
+                { list: "bullet" },
+                { indent: "-1" },
+                { indent: "+1" },
+              ],
+              ["link", "image", "video"],
+              ["clean"],
+              ["align", "direction"], // Alignments and text direction
             ],
-            ["link", "image", "video"],
-            ["clean"],
-            ["align", "direction"], // Alignments and text direction
-          ],
-        }}
-        formats={[
-          "header",
-          "font",
-          "size",
-          "bold",
-          "italic",
-          "underline",
-          "strike",
-          "blockquote",
-          "list",
-          "bullet",
-          "indent",
-          "link",
-          "image",
-          "video",
-          "align",
-          "direction",
-        ]}
-        placeholder="Compose an epic..."
-      />
-      <button className="my-3 btn btn-sm btn-primary" onClick={generatePDF}>
-        Generate & Download PDF
-      </button>
-    </div></>
+          }}
+          formats={[
+            "header",
+            "font",
+            "size",
+            "bold",
+            "italic",
+            "underline",
+            "strike",
+            "blockquote",
+            "list",
+            "bullet",
+            "indent",
+            "link",
+            "image",
+            "video",
+            "align",
+            "direction",
+          ]}
+          placeholder="Compose an epic..."
+        />
+        <button className="my-3 btn btn-sm btn-primary" onClick={generatePDF}>
+          Generate & Download PDF
+        </button>
+      </div>
+    </>
   );
 };
 

@@ -23,7 +23,7 @@ const Breadcrums = () => {
       "faker": "FAKER",
       "length-convertor": "LENGTH CONVERTOR",
       "timezone": "TIMEZONE",
-      "pdf-maker": "PDF MAKER",
+      "pdf-maker": "QUICK PDF",
     };
 
     const matchingKey = Object.keys(urlMap).find((key) =>

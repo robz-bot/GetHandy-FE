@@ -152,6 +152,7 @@ const Home = () => {
         <span className="mx-2 badge bg-danger">text</span>
         <span className="mx-2 badge bg-warning text-dark">image</span>
         <span className="mx-2 badge bg-info text-dark">base64</span>
+        <span className="mx-2 badge bg-secondary text-light">pdf</span>
         <div className="row my-4 mb-3 d-flex align-items-center justify-content-center">
           {filteredCardData.map((card, index) => (
             <div key={index} className="col-md-6 col-lg-4 col-sm-12">
