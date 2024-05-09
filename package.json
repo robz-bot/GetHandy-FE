@@ -8,6 +8,7 @@
     "@testing-library/user-event": "^14.4.3",
     "base-64": "^1.0.0",
     "convert": "^5.2.0",
+    "emoji-regex": "^10.3.0",
     "html-to-react": "^1.7.0",
     "html2canvas": "^1.4.1",
     "html2pdf.js": "^0.10.1",

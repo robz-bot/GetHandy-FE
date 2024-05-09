@@ -18,6 +18,7 @@ import FakerObj from "./Pages/FakerObj/FakerObj";
 import LengthConverter from "./Pages/LengthConvertor/LengthConvertor";
 import TimezoneList from "./Pages/Timezone/Timezone";
 import PDFGenerator from "./Pages/PDFMaker/PDFMaker";
+import EmojiComponent from "./Pages/Emoji/Emoji";
 
 function App() {
   return (
@@ -46,6 +47,7 @@ function App() {
             <Route exact path="/length-convertor" element={<LengthConverter />} />
             <Route exact path="/timezone" element={<TimezoneList />} />
             <Route exact path="/pdf-maker" element={<PDFGenerator />} />
+            <Route exact path="/emoji" element={<EmojiComponent />} />
           </Routes>
           <Footer />
         </div>

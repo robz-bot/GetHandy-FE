@@ -126,6 +126,14 @@ const Home = () => {
       background:
         "radial-gradient(circle, rgb(255, 255, 255) 0%, rgb(100, 180, 205) 100%)",
     },
+    {
+      title: "EMOJI",
+      date: "May 09, 2024",
+      description: "All emoji's with their unicode representations!",
+      link: "/emoji",
+      background:
+        "radial-gradient(circle, rgb(255, 255, 255) 0%, rgb(100, 180, 205) 100%)",
+    },
   ];
 
   // Filter the cardData based on search query

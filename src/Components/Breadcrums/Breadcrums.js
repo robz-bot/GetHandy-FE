@@ -24,6 +24,7 @@ const Breadcrums = () => {
       "length-convertor": "LENGTH CONVERTOR",
       "timezone": "TIMEZONE",
       "pdf-maker": "QUICK PDF",
+      "emoji": "EMOJIES",
     };
 
     const matchingKey = Object.keys(urlMap).find((key) =>
