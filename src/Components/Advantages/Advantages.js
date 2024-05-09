@@ -1,9 +1,10 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function () {
   return (
     <>
-    <hr/>
+      <hr />
       <div class="container marketing text-center">
         <h2 className="text-center mx-2">Advantages</h2>
         <div class="row">
@@ -53,6 +54,35 @@ export default function () {
               All-in-one is a platform-independent browser-based application
               that operates seamlessly on any device without the need for
               downloading or installing software.
+            </small>
+          </div>
+        </div>
+        <hr />
+        <h2 className="text-center my-2">Other Apps</h2>
+        <div class="row d-flex align-items-center  justify-content-center ">
+          <div class="col-lg-4">
+            <img
+              src={process.env.PUBLIC_URL + "/Assets/alooze.png"}
+              alt="mdo"
+              width="130"
+              height="130"
+              class="rounded-circle"
+            />
+            <br />
+            <h4 class="fw-normal">
+              <Link
+                to="https://alooze.vercel.app/"
+                className="text-end icon-link gap-1 icon-link-hover stretched-link  text-dark text-decoration-none "
+                target="_blank"
+              >
+                AlooZe
+                <i className="bi bi-box-arrow-up-right text-dark mx-2"></i>
+              </Link>
+            </h4>
+            <small className=" ">
+              AlooZe collects data from around the world and organises it into
+              networks of user touchpoints around certain themes, producing
+              user-friendly results.
             </small>
           </div>
         </div>

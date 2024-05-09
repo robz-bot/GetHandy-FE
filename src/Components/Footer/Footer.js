@@ -15,11 +15,11 @@ export default function Footer() {
           <li class="ms-3">
             Developed By Robin Rajesh
             <a
-              class="link-body-emphasis text-primary mx-4"
+              class="link-body-emphasis text-primary mx-4 text-decoration-none "
               href="https://www.linkedin.com/in/robin-rajesh-a43360191/"
               target="_blank"
             >
-              <i class="bi bi-linkedin"></i>
+              <i class="bi bi-linkedin"></i> Follow on LinkedIn
             </a>
           </li>
         </ul>

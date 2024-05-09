@@ -11,7 +11,7 @@ const Header = () => {
             <i class="text-dark bi bi-emoji-smile-fill mx-2"></i>
           </h4>
           <p>
-            Developed By Robin Rajesh <a className="text-primary" href="https://www.linkedin.com/in/robin-rajesh-a43360191/" target="_blank"><i class="bi bi-linkedin"></i></a>
+            Developed By Robin Rajesh <a className="text-primary" href="https://www.linkedin.com/in/robin-rajesh-a43360191/" target="_blank"><i class="bi bi-linkedin"></i> Follow on LinkedIn</a>
           </p>
         </div>
         <div className="col-lg-3 col-sm-12">
