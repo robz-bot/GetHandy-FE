@@ -64,9 +64,9 @@ export default function () {
             <img
               src={process.env.PUBLIC_URL + "/Assets/alooze.png"}
               alt="mdo"
-              width="130"
-              height="130"
-              class="rounded-circle"
+              width="170"
+              height="100"
+              class="rounded border border-2"
             />
             <br />
             <h4 class="fw-normal">
