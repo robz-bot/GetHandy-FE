@@ -86,6 +86,7 @@ export default function () {
             </small>
           </div>
         </div>
+        <hr />
       </div>
     </>
   );

@@ -3,7 +3,7 @@ import React from "react";
 export default function Footer() {
   return (
     <>
-      <div class=" container d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+      <div class=" container d-flex flex-column flex-sm-row justify-content-between ">
         <p>
           © 2024
           <span className="mx-1 text-primary fw-bold ">
