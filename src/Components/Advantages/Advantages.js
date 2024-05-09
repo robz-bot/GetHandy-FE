@@ -70,14 +70,14 @@ export default function () {
             />
             <br />
             <h4 class="fw-normal">
-              <Link
-                to="https://alooze.vercel.app/"
-                className="text-end icon-link gap-1 icon-link-hover stretched-link  text-dark text-decoration-none "
+              <a
+                href="https://alooze.vercel.app/"
+                className="text-end icon-link gap-1 icon-link-hover  text-dark text-decoration-none "
                 target="_blank"
               >
                 AlooZe
                 <i className="bi bi-box-arrow-up-right text-dark mx-2"></i>
-              </Link>
+              </a>
             </h4>
             <small className=" ">
               AlooZe collects data from around the world and organises it into
