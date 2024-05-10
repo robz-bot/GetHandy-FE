@@ -19,6 +19,7 @@ import LengthConverter from "./Pages/LengthConvertor/LengthConvertor";
 import TimezoneList from "./Pages/Timezone/Timezone";
 import PDFGenerator from "./Pages/PDFMaker/PDFMaker";
 import EmojiComponent from "./Pages/Emoji/Emoji";
+import RentBillGenerator from "./Pages/RentBillGenerator/RentBillGenerator";
 
 function App() {
   return (
@@ -48,6 +49,7 @@ function App() {
             <Route exact path="/timezone" element={<TimezoneList />} />
             <Route exact path="/pdf-maker" element={<PDFGenerator />} />
             <Route exact path="/emoji" element={<EmojiComponent />} />
+            <Route exact path="/rent-bill" element={<RentBillGenerator />} />
           </Routes>
           <Footer />
         </div>

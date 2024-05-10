@@ -25,6 +25,7 @@ const Breadcrums = () => {
       "timezone": "TIMEZONE",
       "pdf-maker": "QUICK PDF",
       "emoji": "EMOJIES",
+      "rent-bill": "RENT BILL GENERATION",
     };
 
     const matchingKey = Object.keys(urlMap).find((key) =>

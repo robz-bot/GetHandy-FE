@@ -134,6 +134,14 @@ const Home = () => {
       background:
         "radial-gradient(circle, rgb(255, 255, 255) 0%, rgb(100, 180, 205) 100%)",
     },
+    {
+      title: "RENT BILL GENERATOR",
+      date: "May 10, 2024",
+      description: "Rent Bill generation for saving TAX!",
+      link: "/rent-bill",
+      background:
+        "radial-gradient(circle, rgb(255, 255, 255) 0%, rgb(100, 180, 205) 100%)",
+    },
   ];
 
   // Filter the cardData based on search query
