@@ -20,6 +20,7 @@ import TimezoneList from "./Pages/Timezone/Timezone";
 import PDFGenerator from "./Pages/PDFMaker/PDFMaker";
 import EmojiComponent from "./Pages/Emoji/Emoji";
 import RentBillGenerator from "./Pages/RentBillGenerator/RentBillGenerator";
+import InstantResume from "./Pages/InstantResume/InstantResume";
 
 function App() {
   return (
@@ -50,6 +51,7 @@ function App() {
             <Route exact path="/pdf-maker" element={<PDFGenerator />} />
             <Route exact path="/emoji" element={<EmojiComponent />} />
             <Route exact path="/rent-bill" element={<RentBillGenerator />} />
+            <Route exact path="/instant-cv" element={<InstantResume />} />
           </Routes>
           <Footer />
         </div>
