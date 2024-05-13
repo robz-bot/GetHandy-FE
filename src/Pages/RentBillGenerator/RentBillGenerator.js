@@ -389,7 +389,7 @@ const RentBillGenerator = () => {
             type="button"
             onClick={handleGenerateBills}
           >
-            Generate Bills
+            Generate Bill
           </button>
         </div>
         {error && <div style={{ color: "red" }}>{error}</div>}
