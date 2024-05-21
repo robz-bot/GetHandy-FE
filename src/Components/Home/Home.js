@@ -142,14 +142,14 @@ const Home = () => {
       background:
         "radial-gradient(circle, rgb(255, 255, 255) 0%, rgb(100, 180, 205) 100%)",
     },
-    // {
-    //   title: "INSTANT CV",
-    //   date: "May 13, 2024",
-    //   description: "Enter your details and get your CV instant!",
-    //   link: "/instant-cv",
-    //   background:
-    //     "radial-gradient(circle, rgb(255, 255, 255) 0%, rgb(100, 180, 205) 100%)",
-    // },
+    {
+      title: "INSTANT CV",
+      date: "May 13, 2024",
+      description: "Enter your details and get your CV instant!",
+      link: "/instant-cv",
+      background:
+        "radial-gradient(circle, rgb(255, 255, 255) 0%, rgb(100, 180, 205) 100%)",
+    },
   ];
 
   // Filter the cardData based on search query

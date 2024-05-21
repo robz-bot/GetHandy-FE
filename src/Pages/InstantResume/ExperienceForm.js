@@ -107,7 +107,7 @@ const ExperienceForm = ({ onSubmit }) => {
                       <td>
                         <button
                           className="btn btn-sm btn-danger"
-                          // onClick={() => handleRemove(index)}
+                          onClick={() => handleDelete(index)}
                         >
                           Remove
                         </button>
@@ -133,7 +133,7 @@ const ExperienceForm = ({ onSubmit }) => {
                 <input
                   className="form-control form-control-sm"
                   type="text"
-                  placeholder="Company"
+                  placeholder="Position"
                   value={position}
                   onChange={(e) => setPosition(e.target.value)}
                 />

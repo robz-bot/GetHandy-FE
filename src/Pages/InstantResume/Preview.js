@@ -1,8 +1,15 @@
 // src/components/Preview.js
 import React, { useState } from "react";
 import html2pdf from "html2pdf.js";
+import { Badge } from "react-bootstrap";
 
-const Preview = ({ personalInfo, education, experience, skills }) => {
+const Preview = ({
+  personalInfo,
+  education,
+  experience,
+  skills,
+  experienceList,
+}) => {
   const [theme, setTheme] = useState("dark");
 
   const changeTheme = (color) => {
@@ -77,7 +84,9 @@ const Preview = ({ personalInfo, education, experience, skills }) => {
           </div>
           <div className="col-6">
             <p>
-              <span className={"text-" + theme + " fw-bold"}>Designation:</span>
+              <span className={"text-" + theme + " fw-bold"}>
+                Designation:{" "}
+              </span>
               {personalInfo.designation}
             </p>
           </div>
@@ -103,13 +112,13 @@ const Preview = ({ personalInfo, education, experience, skills }) => {
           <div className="col-12">
             <p>
               <span className={"text-" + theme + " fw-bold"}>
-                Professional Summary: 
+                Professional Summary:
               </span>
               {personalInfo.summary}
             </p>
           </div>
         </div>
-        <hr/>
+        <hr />
         {/* Education */}
         <div>
           <h5 className={"text-" + theme}>Education</h5>
@@ -135,6 +144,66 @@ const Preview = ({ personalInfo, education, experience, skills }) => {
               </tbody>
             </table>
           )}
+        </div>
+        {/* Experience */}
+        <div>
+          <h5 className={"text-" + theme}>Education</h5>
+          {experience.length > 0 && (
+            <table class="table table-hover table-sm">
+              <thead>
+                <tr>
+                  <th>Company</th>
+                  <th>Position</th>
+                  <th>Duration</th>
+                </tr>
+              </thead>
+              <tbody>
+                {experience.map((exp, index) => (
+                  <tr key={index}>
+                    <td>{exp.company}</td>
+                    <td>{exp.position}</td>
+                    <td>{exp.duration}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          )}
+        </div>
+        {/* Skills  */}
+        <div className="p-2">
+          <h5 className={"text-" + theme}>Skills</h5>
+          {skills.map((skill, index) => (
+            <Badge key={index} className={"m-2 bg-" + theme}>
+              {skill}
+            </Badge>
+          ))}
+        </div>
+        {/* Projects  */}
+        <div className="p-2">
+          {experienceList.map((project, index) => (
+            <>
+              <div class="card">
+                <div class="card-footer text-body-secondary d-flex align-content-between justify-content-between">
+                  <div>
+                    <p class={"card-title text-"+ theme }>Project: {project.projectNumber}</p>
+                  </div>
+                  <div className=""><p>{project.duration}</p></div>
+                </div>
+                <div class="card-body">
+                  <p class={"card-title text-"+ theme }>
+                    Project Name: {project.projectName}
+                  </p>
+                  <p class={"card-title text-"+ theme }>Role: {project.role}</p>
+                  <p class={"card-title text-"+ theme }>Description: </p>
+                  <p class="card-text">{project.role}</p>
+                  <p class={"card-title text-"+ theme }>Responsibilites: </p>
+                  <p class="card-text">{project.responsibilities}</p>
+                  <p class={"card-title text-"+ theme }>Environment: </p>
+                  <p class="card-text">{project.environment}</p>
+                </div>
+              </div>
+            </>
+          ))}
         </div>
       </div>
       <button
